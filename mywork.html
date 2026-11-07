@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Work — Portfolio</title>
+  <meta name="description" content="รวมผลงานเว็บไซต์และงานออกแบบ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="page">
+
+  <header class="topbar">
+    <div class="search">
+      <form id="site-search" role="search">
+        <i data-icon="search"></i>
+        <input type="text" placeholder="ลองพิมพ์ เช่น “about” หรือ “home”" aria-label="ค้นหาในเว็บไซต์" autocomplete="off">
+      </form>
+    </div>
+    <a class="logo-tile" href="index.html" aria-label="หน้าแรก"><i data-icon="logo"></i></a>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="panel notch-a hero reveal" aria-labelledby="work-title">
+    <div class="hero-title">
+      <span class="eyebrow">Selected projects</span>
+      <h1 class="big-title" id="work-title">My Work</h1>
+      <span class="script" style="left:30%">Projects</span>
+      <span class="eyebrow">YOUR NAME · DESIGN</span>
+    </div>
+
+    <div class="info-card">
+      <img class="hero-astro" data-depth="10" src="assets/astronaut.svg" alt="">
+      <h2>ผลงานของฉัน …</h2>
+      <p>รวมโปรเจกต์ที่ภูมิใจนำเสนอ ตั้งแต่เว็บไซต์ แดชบอร์ด ไปจนถึงงานออกแบบ UI กดที่การ์ดเพื่อดูรายละเอียดเพิ่มเติมของแต่ละชิ้นงาน</p>
+      <span class="square-ghost" aria-hidden="true"></span>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="btn-row">
+        <a class="btn" href="about.html">About me</a>
+        <a class="btn" href="mailto:you@example.com">Hire me</a>
+      </div>
+      <nav class="nav-tiles" aria-label="เมนูหลัก">
+        <a class="tile" href="index.html" aria-label="Home"><i data-icon="home"></i><span class="tip">Home</span></a>
+        <a class="tile" href="mywork.html" aria-current="page" aria-label="My Work"><i data-icon="grid"></i><span class="tip">My Work</span></a>
+        <a class="tile" href="about.html#skills" aria-label="Skills"><i data-icon="gear"></i><span class="tip">Skills</span></a>
+        <a class="tile" href="about.html" aria-label="About me"><i data-icon="user"></i><span class="tip">About</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="panel notch-b reveal" id="projects" aria-labelledby="projects-label" style="padding-top:78px">
+    <span class="pill-label" id="projects-label">All projects</span>
+
+    <div class="chips" role="group" aria-label="กรองผลงาน" style="margin-bottom:30px">
+      <button class="chip on" type="button" data-filter="all">All</button>
+      <button class="chip" type="button" data-filter="web">Web</button>
+      <button class="chip" type="button" data-filter="ui">UI Design</button>
+      <button class="chip" type="button" data-filter="app">App</button>
+    </div>
+
+    <div class="work-grid">
+      <button class="work" type="button" data-cat="web app" data-id="p1" data-open data-art="blackhole" data-title="Orbit Dashboard" data-tags="React, Node.js, Chart.js" data-desc="แดชบอร์ดแสดงข้อมูลแบบเรียลไทม์ พร้อมกราฟ ตัวกรอง และโหมดมืด ออกแบบให้อ่านง่ายและโหลดเร็ว (ตัวอย่างผลงาน — แก้ข้อความนี้เป็นรายละเอียดจริงของคุณ)" data-link="#">
+        <div class="shot"><div class="art blackhole"></div><span class="go"><i data-icon="right"></i></span></div>
+        <h3>Orbit Dashboard</h3>
+        <p>แดชบอร์ดวิเคราะห์ข้อมูลแบบเรียลไทม์</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span></div>
+      </button>
+
+      <button class="work" type="button" data-cat="web" data-id="p2" data-open data-art="milkyway" data-title="Milky Blog" data-tags="HTML, CSS, JavaScript" data-desc="เว็บบล็อกส่วนตัวที่เน้นการอ่านสบายตา มีระบบค้นหาและหมวดหมู่ รองรับทุกขนาดหน้าจอ (ตัวอย่างผลงาน — แก้ข้อความนี้เป็นรายละเอียดจริงของคุณ)" data-link="#">
+        <div class="shot"><div class="art milkyway"></div><span class="go"><i data-icon="right"></i></span></div>
+        <h3>Milky Blog</h3>
+        <p>บล็อกส่วนตัวที่อ่านสบายตา</p>
+        <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+      </button>
+
+      <button class="work" type="button" data-cat="web app" data-id="p3" data-open data-art="moon" data-title="Luna Shop" data-tags="Next.js, Stripe, PostgreSQL" data-desc="ร้านค้าออนไลน์ครบวงจร มีตะกร้าสินค้า ระบบชำระเงิน และหลังบ้านจัดการสินค้า (ตัวอย่างผลงาน — แก้ข้อความนี้เป็นรายละเอียดจริงของคุณ)" data-link="#">
+        <div class="shot"><div class="art moon"></div><span class="go"><i data-icon="right"></i></span></div>
+        <h3>Luna Shop</h3>
+        <p>ร้านค้าออนไลน์พร้อมระบบชำระเงิน</p>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span></div>
+      </button>
+
+      <button class="work" type="button" data-cat="web ui" data-id="p4" data-open data-art="comet" data-title="Comet Landing" data-tags="Landing Page, Animation" data-desc="แลนดิ้งเพจสำหรับเปิดตัวผลิตภัณฑ์ เน้นแอนิเมชันนุ่มนวลและการเล่าเรื่องขณะเลื่อนหน้า (ตัวอย่างผลงาน — แก้ข้อความนี้เป็นรายละเอียดจริงของคุณ)" data-link="#">
+        <div class="shot"><div class="art comet"></div><span class="go"><i data-icon="right"></i></span></div>
+        <h3>Comet Landing</h3>
+        <p>แลนดิ้งเพจเปิดตัวผลิตภัณฑ์</p>
+        <div class="tags"><span class="tag">Landing</span><span class="tag">Animation</span></div>
+      </button>
+
+      <button class="work" type="button" data-cat="ui app" data-id="p5" data-open data-art="nebula" data-title="Nebula UI Kit" data-tags="Figma, Design System" data-desc="ชุดคอมโพเนนต์ UI สไตล์ soft UI พร้อมโทเคนสีและตัวอักษร นำไปใช้ซ้ำได้ในหลายโปรเจกต์ (ตัวอย่างผลงาน — แก้ข้อความนี้เป็นรายละเอียดจริงของคุณ)" data-link="#">
+        <div class="shot"><div class="art nebula"></div><span class="go"><i data-icon="right"></i></span></div>
+        <h3>Nebula UI Kit</h3>
+        <p>ชุดดีไซน์ซิสเต็มสไตล์ soft UI</p>
+        <div class="tags"><span class="tag">Figma</span><span class="tag">UI</span></div>
+      </button>
+
+      <button class="work" type="button" data-cat="app ui" data-id="p6" data-open data-art="aurora" data-title="Aurora Planner" data-tags="Mobile App, UX" data-desc="แอปวางแผนกิจกรรมประจำวัน ออกแบบ flow ให้ใช้งานด้วยมือเดียว พร้อมแจ้งเตือนอัจฉริยะ (ตัวอย่างผลงาน — แก้ข้อความนี้เป็นรายละเอียดจริงของคุณ)" data-link="#">
+        <div class="shot"><div class="art aurora"></div><span class="go"><i data-icon="right"></i></span></div>
+        <h3>Aurora Planner</h3>
+        <p>แอปวางแผนกิจกรรมประจำวัน</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">UX</span></div>
+      </button>
+    </div>
+  </section>
+
+  <div class="scroll-wrap">
+    <button class="scroll-btn" type="button" data-scroll="#cta" aria-label="เลื่อนลง">
+      <span>GULIR</span><i data-icon="down"></i>
+    </button>
+  </div>
+
+  <!-- ===== CTA ===== -->
+  <section class="panel notch-c gallery-panel reveal" id="cta" aria-label="ติดต่อทำงานร่วมกัน">
+    <div class="gallery" style="grid-template-columns:1fr 1.1fr">
+      <div class="info-card">
+        <h2>ทำงานด้วยกันไหม …</h2>
+        <p style="padding-right:0">มีไอเดียหรือโปรเจกต์ที่อยากสร้างให้เป็นจริง? ทักมาคุยกันได้เลย ยินดีรับทั้งงานเว็บไซต์ งานออกแบบ UI และงานที่ต้องการมุมมองใหม่ ๆ</p>
+        <div class="btn-row" style="margin-top:22px">
+          <a class="btn" href="mailto:you@example.com">Hire me</a>
+          <a class="btn" href="about.html#contact">Contact</a>
+        </div>
+      </div>
+      <a class="featured" href="about.html" aria-label="ไปหน้า About me" style="aspect-ratio:1/.8">
+        <div class="art galaxy"></div>
+        <span class="plus"><i data-icon="plus"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer-bar">Created by Your Name · <span data-year>2026</span></footer>
+</main>
+
+<!-- ===== Project modal ===== -->
+<dialog class="modal" id="work-modal" aria-label="รายละเอียดผลงาน">
+  <button class="close" type="button" aria-label="ปิด"><i data-icon="close"></i></button>
+  <div class="m-art"><div class="art"></div></div>
+  <div class="m-body">
+    <h3></h3>
+    <div class="tags"></div>
+    <p class="m-desc"></p>
+    <div class="btn-row"><a class="btn m-link" href="#">View project <i data-icon="right"></i></a></div>
+  </div>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>

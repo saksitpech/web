@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About me — Portfolio</title>
+  <meta name="description" content="ประวัติ ทักษะ และช่องทางติดต่อ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="page">
+
+  <header class="topbar">
+    <div class="search">
+      <form id="site-search" role="search">
+        <i data-icon="search"></i>
+        <input type="text" placeholder="ลองพิมพ์ เช่น “ผลงาน” หรือ “home”" aria-label="ค้นหาในเว็บไซต์" autocomplete="off">
+      </form>
+    </div>
+    <a class="logo-tile" href="index.html" aria-label="หน้าแรก"><i data-icon="logo"></i></a>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="panel notch-a hero reveal" aria-labelledby="about-title">
+    <div class="hero-title">
+      <span class="eyebrow">Get to know</span>
+      <h1 class="big-title" id="about-title">About</h1>
+      <span class="script">me</span>
+      <span class="eyebrow">YOUR NAME · DESIGN</span>
+    </div>
+
+    <div class="profile-wrap">
+      <figure class="profile">
+        <img src="assets/profile.jpg" alt="รูปโปรไฟล์">
+      </figure>
+      <span class="badge">Web Developer · Designer</span>
+      <img class="hero-astro" data-depth="10" style="top:-70px;right:-30px;width:120px" src="assets/astronaut.svg" alt="">
+    </div>
+
+    <div class="info-card" style="grid-column:1/-1">
+      <h2>ผมคือใคร …</h2>
+      <p style="padding-right:0">สวัสดีครับ ผมเป็นนักพัฒนาเว็บที่รักการออกแบบ ชอบเปลี่ยนไอเดียให้เป็นหน้าเว็บที่ใช้งานได้จริงและสวยงาม สนใจทั้งฝั่ง Frontend และ Backend และชอบเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ เป้าหมายของผมคือสร้างผลงานที่ผู้ใช้จดจำได้</p>
+      <div class="facts">
+        <div class="fact"><b>10+</b><span>Projects</span></div>
+        <div class="fact"><b>3+</b><span>Years learning</span></div>
+        <div class="fact"><b>∞</b><span>Curiosity</span></div>
+      </div>
+      <span class="square-ghost" aria-hidden="true"></span>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="btn-row">
+        <a class="btn" href="mywork.html">My work</a>
+        <a class="btn" href="#contact" data-scroll="#contact">Contact</a>
+      </div>
+      <nav class="nav-tiles" aria-label="เมนูหลัก">
+        <a class="tile" href="index.html" aria-label="Home"><i data-icon="home"></i><span class="tip">Home</span></a>
+        <a class="tile" href="mywork.html" aria-label="My Work"><i data-icon="grid"></i><span class="tip">My Work</span></a>
+        <a class="tile" href="#skills" aria-label="Skills"><i data-icon="gear"></i><span class="tip">Skills</span></a>
+        <a class="tile" href="about.html" aria-current="page" aria-label="About me"><i data-icon="user"></i><span class="tip">About</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===== Skills + timeline ===== -->
+  <section class="panel notch-b content reveal" id="skills" aria-labelledby="skills-label">
+    <span class="pill-label" id="skills-label">Skills &amp; Experience</span>
+    <div class="frame">
+      <img class="deco-planet" data-depth="8" src="assets/planet.svg" alt="">
+
+      <article class="card cut-a" style="margin-top:60px">
+        <h3>ทักษะหลัก</h3>
+        <div class="skills">
+          <div class="skill-row"><div class="label"><span>HTML / CSS</span><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+          <div class="skill-row"><div class="label"><span>JavaScript</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+          <div class="skill-row"><div class="label"><span>React / Next.js</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+          <div class="skill-row"><div class="label"><span>Node.js / API</span><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+          <div class="skill-row"><div class="label"><span>UI Design (Figma)</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+        </div>
+      </article>
+
+      <article class="card cut-b shift">
+        <h3>การศึกษาและประสบการณ์</h3>
+        <ul class="timeline">
+          <li><small>2026 — ปัจจุบัน</small><b>นักศึกษา / Freelance Web Developer</b>รับงานเว็บไซต์และออกแบบ UI</li>
+          <li><small>2025</small><b>เข้าร่วมกิจกรรมและเวิร์กช็อป</b>เรียนรู้การทำงานเป็นทีมและนำเสนอผลงาน</li>
+          <li><small>2024</small><b>เริ่มสร้างโปรเจกต์ส่วนตัว</b>ฝึก Frontend และเชื่อมต่อ API</li>
+        </ul>
+      </article>
+
+      <article class="card" style="grid-column:1/-1;margin-top:10px">
+        <h3>เครื่องมือที่ใช้</h3>
+        <div class="chips">
+          <span class="chip on">Git</span><span class="chip on">VS Code</span><span class="chip on">Figma</span>
+          <span class="chip">Tailwind</span><span class="chip">Express</span><span class="chip">PostgreSQL</span>
+          <span class="chip">MongoDB</span><span class="chip">Docker</span><span class="chip">Vercel</span>
+        </div>
+      </article>
+      <img class="deco-rocket" data-depth="9" src="assets/rocket.svg" alt="">
+    </div>
+  </section>
+
+  <div class="scroll-wrap">
+    <button class="scroll-btn" type="button" data-scroll="#moments" aria-label="เลื่อนลง">
+      <span>GULIR</span><i data-icon="down"></i>
+    </button>
+  </div>
+
+  <!-- ===== Moments + contact ===== -->
+  <section class="panel notch-c gallery-panel reveal" id="moments" aria-labelledby="moments-title">
+    <div class="moments">
+      <figure class="moment-photo">
+        <img src="assets/profile.jpg" alt="บรรยากาศในงานกิจกรรม">
+        <figcaption>MOMENTS · ENGVENTURE 2026</figcaption>
+      </figure>
+      <div class="info-card">
+        <h2 id="moments-title">ชอบอะไร …</h2>
+        <p style="padding-right:0">นอกจากเขียนโค้ด ผมชอบเข้าร่วมกิจกรรม พบปะผู้คน และเก็บแรงบันดาลใจจากสิ่งรอบตัว เพื่อนำมาใช้ในงานออกแบบ ไม่ว่าจะเป็นสี จังหวะ หรือบรรยากาศของพื้นที่ต่าง ๆ</p>
+        <div class="chips" style="margin-top:18px">
+          <span class="chip">Design</span><span class="chip">Coding</span><span class="chip">Events</span><span class="chip">Space</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="contact" style="color:#f4f2ff;font:800 1.4rem var(--font-body);letter-spacing:.08em;text-transform:uppercase;margin:44px 0 18px">ติดต่อ</h2>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:you@example.com"><i data-icon="mail"></i><div><b>Email</b><span>you@example.com</span></div></a>
+      <a class="contact-card" href="#"><i data-icon="chat"></i><div><b>Line / Social</b><span>@your.handle</span></div></a>
+      <a class="contact-card" href="#"><i data-icon="pin"></i><div><b>Location</b><span>Bangkok, Thailand</span></div></a>
+    </div>
+  </section>
+
+  <footer class="footer-bar">Created by Your Name · <span data-year>2026</span></footer>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

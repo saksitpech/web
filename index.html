@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Galaxy</title>
+  <meta name="description" content="Web portfolio ธีมม่วงอวกาศ แนว soft UI / neumorphism">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="page">
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <div class="search">
+      <form id="site-search" role="search">
+        <i data-icon="search"></i>
+        <input type="text" placeholder="ลองพิมพ์ เช่น “ผลงาน” หรือ “about”" aria-label="ค้นหาในเว็บไซต์" autocomplete="off">
+      </form>
+    </div>
+    <a class="logo-tile" href="index.html" aria-label="หน้าแรก"><i data-icon="logo"></i></a>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="panel notch-a hero reveal" aria-labelledby="hero-title">
+    <div class="hero-title">
+      <span class="eyebrow">Web Design × Development</span>
+      <h1 class="big-title" id="hero-title">Portfolio</h1>
+      <span class="script">Creative</span>
+      <span class="eyebrow">YOUR NAME · DESIGN</span>
+    </div>
+
+    <div class="info-card">
+      <img class="hero-astro" data-depth="10" src="assets/astronaut.svg" alt="">
+      <h2>สวัสดี ฉันคือ …</h2>
+      <p>นักพัฒนาเว็บและนักออกแบบที่หลงใหลในการสร้างประสบการณ์ดิจิทัลที่สวยงาม ใช้งานง่าย และมีเรื่องราว เหมือนการสำรวจกาแล็กซีใหม่ในทุกโปรเจกต์</p>
+      <span class="square-ghost" aria-hidden="true"></span>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="btn-row">
+        <a class="btn" href="about.html">About me</a>
+        <a class="btn" href="mailto:you@example.com">Hire me</a>
+      </div>
+      <nav class="nav-tiles" aria-label="เมนูหลัก">
+        <a class="tile" href="index.html" aria-current="page" aria-label="Home"><i data-icon="home"></i><span class="tip">Home</span></a>
+        <a class="tile" href="mywork.html" aria-label="My Work"><i data-icon="grid"></i><span class="tip">My Work</span></a>
+        <a class="tile" href="about.html#skills" aria-label="Skills"><i data-icon="gear"></i><span class="tip">Skills</span></a>
+        <a class="tile" href="about.html" aria-label="About me"><i data-icon="user"></i><span class="tip">About</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===== Short intro ===== -->
+  <section class="panel notch-b content reveal" id="intro" aria-labelledby="intro-label">
+    <span class="pill-label" id="intro-label">Short introduction</span>
+    <div class="frame">
+      <img class="deco-planet" data-depth="8" src="assets/planet.svg" alt="">
+      <img class="deco-rider" data-depth="12" src="assets/rider.svg" alt="">
+      <a class="btn arrow skip" href="mywork.html"><i data-icon="right"></i> ข้ามไปดูผลงาน</a>
+
+      <article class="card cut-a" style="margin-top:60px">
+        <h3>แนวทางการทำงาน</h3>
+        <p>ผมเริ่มจากการเข้าใจผู้ใช้และเป้าหมายของโปรเจกต์ ก่อนออกแบบโครงสร้างและหน้าตา แล้วลงมือพัฒนาด้วยโค้ดที่สะอาด ดูแลต่อได้ง่าย และรองรับทุกหน้าจอ ตั้งแต่มือถือจนถึงเดสก์ท็อป</p>
+      </article>
+
+      <article class="card cut-b shift">
+        <h3>สิ่งที่ผมทำได้</h3>
+        <p>ออกแบบ UI/UX, พัฒนา Frontend ด้วย HTML, CSS, JavaScript และเฟรมเวิร์กยอดนิยม, เชื่อมต่อ API, จัดการฐานข้อมูล ไปจนถึงนำเว็บขึ้นออนไลน์ พร้อมใส่ใจรายละเอียดเล็ก ๆ ที่ทำให้ผลงานโดดเด่น</p>
+      </article>
+
+      <a class="btn arrow more" href="about.html"><i data-icon="right"></i> อ่านเพิ่มเติมเกี่ยวกับฉัน…</a>
+      <img class="deco-rocket" data-depth="9" src="assets/rocket.svg" alt="">
+    </div>
+  </section>
+
+  <div class="scroll-wrap">
+    <button class="scroll-btn" type="button" data-scroll="#featured" aria-label="เลื่อนลงไปดูผลงานเด่น">
+      <span>GULIR</span><i data-icon="down"></i>
+    </button>
+  </div>
+
+  <!-- ===== Featured gallery ===== -->
+  <section class="panel notch-c gallery-panel reveal" id="featured" aria-label="ผลงานเด่น">
+    <div class="gallery">
+      <div class="thumbs">
+        <a class="thumb" href="mywork.html#p1" aria-label="ผลงาน 1: Orbit Dashboard">
+          <div class="art blackhole"></div><span class="go"><i data-icon="right"></i></span>
+        </a>
+        <a class="thumb" href="mywork.html#p2" aria-label="ผลงาน 2: Milky Blog">
+          <div class="art milkyway"></div><span class="go"><i data-icon="right"></i></span>
+        </a>
+        <a class="thumb" href="mywork.html#p3" aria-label="ผลงาน 3: Luna Shop">
+          <div class="art moon"></div><span class="go"><i data-icon="right"></i></span>
+        </a>
+        <a class="thumb" href="mywork.html#p4" aria-label="ผลงาน 4: Comet Landing">
+          <div class="art comet"></div><span class="go"><i data-icon="right"></i></span>
+        </a>
+      </div>
+      <a class="featured" href="mywork.html" aria-label="ดูผลงานทั้งหมด">
+        <div class="art galaxy"></div>
+        <span class="plus"><i data-icon="plus"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer-bar">Created by Your Name · <span data-year>2026</span></footer>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
